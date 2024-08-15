@@ -1,0 +1,714 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan sajid</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="btn--animateglowPink m-1 p-1.5 min-h-svh overflow-hidden" x-data="{ openError: false }">
+    <div class="min-h-svh max-w-[1440px] mx-auto">
+      <nav class="max-w-[1240px] mx-auto" x-data="{ openNav: false }">
+        <div class="px-4 pt-4 pt-0 min-[845px]:pt-9 transition-all">
+          <div class="flex justify-between">
+            <div class="flex">
+              <div class="logo flex flex-shrink-0 items-center text-white hover:text-[#E730CA] transition-colors">
+                <img src="assets/images/logo.svg" alt=""
+                  class="hidden md:block logo-svg transform hover: transition-transform duration-700"
+                  style="transform-style: preserve-3d" width="90" height="44" viewBox="0 0 52 44" fill="none">       <img src="assets/images/logo.svg" alt=""
+                  class="md:hidden"
+                  style="transform-style: preserve-3d" width="37" height="31" viewBox="0 0 52 44" fill="none">
+
+            
+              </div>
+            </div>
+
+            <div class="hidden min-[845px]:flex sm:space-x-8">
+              <a href="#Experience1"
+                class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500"
+                aria-current="page">Experience</a>
+              <a href="#Education"
+                class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Education</a>
+              <a href="#Projects1"
+                class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Projects</a>
+              <a href="#Contact"
+                class="relative text-white hover:text-[#E730CA] inline-flex items-center font-bold before:content-[''] before:absolute before:bottom-2.5 before:left-1/2 before:transform before:-translate-x-1/2 before:h-[1.5px] before:w-0 before:bg-white before:transition-all before:hover:w-full before:duration-500">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-7">
+              <a class="relative group hidden min-[845px]:flex bg-transparent min-w-44 w-44 h-12 rounded-lg overflow-hidden border border-[#E730CA] font-semibold text-[#E730CA] sm:hover:text-white sm:hover:border-[#561950] transition-all duration-700"
+                href="https://wa.me/9672932853" style="will-change: transform" id="cta">
+                <span x-on:mouseover="openError = true"
+                  class="flex justify-center items-center h-full w-full sm:transform sm:group-hover:-translate-x-3.5 transition-transform cursor-pointer duration-700">What's
+                  App Me</span>
+                <span
+                  class="absolute top-0 -right-8 sm:group-hover:right-0 h-full flex justify-center items-center px-1.5 bg-[#E730CA] transition-all cursor-pointer duration-700">
+
+                </span>
+              </a>
+
+
+            </div>
+
+            <div class="-mr-2 flex items-center min-[845px]:hidden">
+              <button type="button" x-on:click="openNav = true"
+                class="relative inline-flex items-center justify-center p-1 text-white hover:text-[#E730CA] focus:outline-none transition-colors"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div x-cloak x-show="openNav" class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+          <div x-show="openNav" x-transition:enter="transition-opacity ease-linear duration-300"
+            x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+            x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-900/80"></div>
+
+          <div x-show="openNav" x-transition:enter="transition ease-in-out duration-300 transform"
+            x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
+            x-transition:leave="transition ease-in-out duration-300 transform" x-transition:leave-start="translate-x-0"
+            x-transition:leave-end="-translate-x-full" class="fixed inset-0 flex">
+            <div x-show="openNav" class="relative mr-16 flex w-full max-w-xs flex-1">
+              <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+                <button type="button" x-on:click="openNav = false" class="-m-2.5 p-2.5">
+                  <span class="sr-only">Close sidebar</span>
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-[#131313] px-6 pb-2">
+                <div class="flex h-16 shrink-0 items-center">
+                  <img src="assets/images/logo.svg" alt="logo" width="50px">
+                </div>
+                <nav class="flex flex-1 flex-col">
+                  <ul role="list" class="flex flex-1 flex-col gap-y-7">
+                    <li>
+                      <ul role="list" class="-mx-2 space-y-1">
+                        <li>
+                          <a href="#Experience2"
+                            class="text-gray-300 hover:text-white hover:bg-[#E730CA]/80 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                            Experience
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#Education"
+                            class="text-gray-300 hover:text-white hover:bg-[#E730CA]/80 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                            Education
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#Projects1"
+                            class="text-gray-300 hover:text-white hover:bg-[#E730CA]/80 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                            Projects
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#Contact"
+                            class="text-gray-300 hover:text-white hover:bg-[#E730CA]/80 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                            Contact
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="pt-20 lg:pt-20 xl:pt-20">
+        <!-- hero section -->
+        <header>
+          <div class="relative isolate">
+            <div
+              class="mx-auto max-w-7xl px-6 space-y-20 sm:space-y-52 lg:space-y-0 lg:flex lg:items-start lg:gap-x-10 lg:pl-8 lg:pr-20">
+              <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+                <div class="flex">
+                  <div x-on:mouseover="openError = true"
+                    class="relative flex items-center gap-x-4 rounded-full px-4 py-1 leading-6 text-sm xl:text-base text-white xl:font-semibold border border-[#CACACA]/60 bg-transparent hover:bg-[#E730CA] hover:border-transparent transition-colors">
+                    <a href="#" class="flex items-center gap-x-1">
+                      Hey Buddy
+                      <i class="fa-solid fa-hand mx-2 text-[#FF33DE]"></i>
+                    </a>
+                  </div>
+                </div>
+                <h1
+                  class="mt-10 max-w-lg text-4xl sm:text-7xl lg:text-6xl font-semibold text-white xl:text-7xl tracking-tight">
+                  Faizan Sajid <br><span class="text-[#FF33DE]">here!</span></h1>
+                <p class="mt-6 xl:text-lg font-medium leading-8 text-white max-w-[553px]">Transforming imagination into
+                  Reality</p>
+                <div class="mt-10 flex items-center gap-x-6">
+                  <a href="https://wa.me/9672932853" x-on:mouseover="openError = true"
+                    class="rounded-xl bg-[#E730CA] w-52 xl:w-100 py-2.5 font-semibold text-sm xl:text-base text-white text-center border border-transparent hover:border-[#E730CA] hover:bg-transparent focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-transparent transition-colors" download="faizan-sajid_Resume.pdf">RESUME
+                    <i class="fa-solid fa-circle-down mx-2"></i></a>
+                </div>
+              </div>
+              <div
+                class="relative flex justify-center align-items-start mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+
+                <div class="flex justify-start align-items-center">
+                  <img src="assets/images/bugcat-loading-unscreen.gif" class="text-center danceing-gif color-image"
+                    style="width: 70%;" alt="">
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- hero section end  -->
+        <!-- all skills  -->
+        <section class="my-20 ">
+          <div class="tag-scrollers ">
+            <div class="tag-scroller ">
+              <ul class="tag-list">
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JAVA SCRIPT</li>
+                <li>REACT</li>
+                <li>REACT NATIVE</li>
+                <li>REDUX TOOLKIT</li>
+                <li>ELECTRON JS</li>
+                <li>UX</li>
+                <li>MARKET RESEARCH</li>
+                <li>STRATEGY</li>
+                <li>UI ARCHITECTURE</li>
+                <li>WEB DEVELOPMENT</li>
+                <li>BOOTSTRAP</li>
+                <li>BRAND IDENTITY</li>
+                <li>FRONT-END</li>
+                <li>PRODUCT DESIGN</li>
+                <li>PROBLEM SOLVING</li>
+                <li>TEAM CAPTAIN</li>
+                <li>TEAM PLAYER</li>
+                <li>CLIENT CARE SPECIALIST</li>
+                <li>ADAPTABILITY</li>
+                <li>FLEXIBILITY</li>
+                <li>RESEARCH BASED</li>
+                <li>GRAPHICS</li>
+                <li>PROJECT MANAGMENT</li>
+                <li>VS CODE</li>
+                <li>FIGMA</li>
+                <li>FILMORA</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+          <h2 class="my-10 text-2xl text-center sm:text-[2.5rem] font-semibold tracking-tight text-white">
+            <span class="text-[#FF33DE]">Tech </span>Skills
+          </h2>
+          <div class="flex justify-center align-center">
+            <div class="w-full sm:w-full md:w-2/3 lg:w-1/2">
+              <div class="flex flex-row justify-center skill-set flex-wrap mx-1 ">
+                <p><img src="assets/images/html.png" class="skill-icon" alt="">Html</p>
+                <p><img src="assets/images/css-3 (1).png" class="skill-icon" alt="">CSS</p>
+                <p><img src="assets/images/js (1).png" class="skill-icon" alt="">Java script</p>
+                <p><img src="assets/images/react.svg" class="skill-icon" alt="">React</p>
+                <p><img src="assets/images/react.svg" class="skill-icon" alt="">React native</p>
+                <p><img src="assets/images/logo (1).svg" class="skill-icon" alt="">Electron js</p>
+                <p><img src="assets/images/bootstrap (1).png" class="skill-icon" alt="">Bootstrap</p>
+                <p><img src="assets/images/redux.svg" class="skill-icon" alt="">Redux toolkit</p>
+                <p><img src="assets/images/figma.png" class="skill-icon" alt="">Figma</p>
+                <p><img src="assets/images/GitHub-Mark-ea2971cee799.png" class="skill-icon" alt="">Github</p>
+                <p><img src="assets/images/filmora-square.svg" class="skill-icon" alt="">Filmora</p>
+              </div>
+            </div>
+  
+          </div>
+        </section>
+        <!-- all skills end  -->
+        <main class="max-w-[1240px] mx-auto pb-22">
+          <!-- timeline   -->
+          <section class="timeline-1" id="Experience1">
+            <div class="w-full mx-auto p-4">
+              <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
+
+              <div class="relative">
+                <div class="border-l-4 border-[#FF33DE] absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="z-20 flex items-center order-1 order shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                  </div>
+                  <div data-aos="fade-left" class="order-1 ex-box rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">Frontend Developer</h3>
+                    <h4 class="mb-2 text-white text-lg">Synilogic tech private limited</h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li class="my-1"> Building responsive user interfaces with React.js, HTML, CSS, and JavaScript,
+                        ensuring a smooth experience across all devices.</li>
+                      <li class="my-1">Crafting app mockups and prototypes in Figma, collaborating with other designers
+                        to create visually engaging and user-friendly web applications & mobile apps.</li>
+                      <li class="my-1"> Collaborating with teams to refine ideas, focusing on the user experience to
+                        make sure the final product is not only functional but also enjoyable to use.</li>
+                    </p>
+
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>March
+                        2024 - <span style="color: rgb(79, 245, 79); font-size: 20px;">Now</span></strong></p>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="z-20 flex items-center order-1 order shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                  </div>
+                  <div data-aos="fade-right" class="order-1 ex-box rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">Shift in charge </h3>
+                    <h4 class="mb-2 text-white text-lg">Svaar process solution pvt ltd</h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li>Proficiently managed equipment and evaporation process.</li>
+                    </p>
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>June 2021
+                        - Aug 2022</strong></p>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="z-20 flex items-center order-1 order shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                  </div>
+                  <div data-aos="fade-left" class="order-1 ex-box rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">DET – Diploma engineer trainee </h3>
+                    <h4 class="mb-2 text-white text-lg"></h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li>Operated and maintained electroplating process and equipment, including tank management.</li>
+                    </p>
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>Dec 2020
+                        - May 2021</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- timeline end  -->
+
+          <!-- timeline 2 end  -->
+          <section class="timeline-2 " id="Experience2" style="display: none;">
+            <div class="max-w-4xl mx-auto p-4">
+              <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
+
+              <div class="relative">
+                <!-- Timeline Line -->
+                <div class="border-l-4 border-[#FF33DE] absolute h-full left-0"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="mb-8 flex justify-start items-center w-full">
+                  <div class="z-20 flex items-center order-1 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                  </div>
+                  <div data-aos="fade-left" class="order-1 ex-box rounded-lg shadow-xl  px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">Frontend Developer</h3>
+                    <h4 class="mb-2 text-white text-lg">Synilogic tech private limited</h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li class="my-1"> Building responsive user interfaces with React.js, HTML, CSS, and JavaScript,
+                        ensuring a smooth experience across all devices.</li>
+                      <li class="my-1">Crafting app mockups and prototypes in Figma, collaborating with other designers
+                        to create visually engaging and user-friendly web applications & mobile apps.</li>
+                      <li class="my-1"> Collaborating with teams to refine ideas, focusing on the user experience to
+                        make sure the final product is not only functional but also enjoyable to use.</li>
+                    </p>
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>March
+                        2024 - <span style="color: rgb(79, 245, 79); font-size: 20px;">Now</span></strong></p>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="mb-8 flex justify-start items-center w-full">
+                  <div class="z-20 flex items-center order-1 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                  </div>
+                  <div data-aos="fade-right" class="order-1 ex-box rounded-lg shadow-xl  px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">Shift in charge </h3>
+                    <h4 class="mb-2 text-white text-lg">Svaar process solution pvt ltd</h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li>Proficiently managed equipment and evaporation process.</li>
+                    </p>
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>June 2021
+                        - Aug 2022</strong></p>
+                  </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="mb-8 flex justify-start items-center w-full">
+                  <div class="z-20 flex items-center order-1 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                  </div>
+                  <div data-aos="fade-left" class="order-1 ex-box rounded-lg shadow-xl px-6 py-4">
+                    <h3 class="mb-1 font-bold text-xl text-[#FF33DE]">DET – Diploma engineer trainee </h3>
+                    <h4 class="mb-2 text-white text-lg"></h4>
+                    <p class="text-sm leading-snug tracking-wide text-white text-opacity-100 mb-2">
+                      <li>Operated and maintained electroplating process and equipment, including tank management.</li>
+                    </p>
+                    <p class="text-md my-3 leading-snug tracking-wide text-opacity-100 text-[#FF33DE]"><strong>Dec 2020
+                        - May 2021</strong></p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+          <!-- timeline 2 end  -->
+
+          <!-- Grid tabs -->
+          <section id="Education">
+            <h2 class="my-10 text-2xl sm:text-[2.5rem] font-semibold tracking-tight text-white "><span
+                class="text-[#FF33DE]">Education</span></h2>
+            <div class="education">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mx-5">
+                <div class="code-editor">
+                  <div class="header">
+                    <span class="title">Product Engineer</span>
+
+                  </div>
+
+                  <div class="editor-content">
+                    <code class="code">
+            <p><span class="color-0">.front-end_developer</span> <span>{</span></p>
+  
+            <p class="property">
+              <span class="color-2">institute</span><span>:</span>
+              <span class="color-3">school of accelerated learning</span>;
+            </p>
+            <p class="property">
+              <span class="color-2">course-type</span><span>:</span>
+             <span class="color-3">certificate</span>;
+            </p>
+            <p class="property">
+              <span class="color-2">technical-skills</span><span>:</span>
+              <span class="color-1"><span class="color-4">skills(</span>html, css, js, react.js, react-native, redux-toolkit, electron js, bootstrap, <span class="color-4">)</span></span>;
+            </p>
+            <p class="property">
+              <span class="color-2">year</span><span>:</span>
+              <span class="color-1">july 2023</span>;
+            </p>
+            <span>}</span>
+          </code>
+                  </div>
+                </div>
+                <div class="code-editor">
+                  <div class="header">
+                    <span class="title">Chemical Engineer</span>
+
+                  </div>
+
+                  <div class="editor-content">
+                    <code class="code">
+            <p><span class="color-0">.chemical-engineering</span> <span>{</span></p>
+  
+            <p class="property">
+              <span class="color-2">institute</span><span>:</span>
+              <span class="color-3">yogiraj institute of technology</span>;
+            </p>
+            <p class="property">
+              <span class="color-2">course-type</span><span>:</span>
+             <span class="color-3">diploma</span>;
+            </p>
+            <p class="property">
+              <span class="color-2">Percentage</span><span>:</span>
+              <span class="color-1"><span class=""></span>74%<span class="color-4"></span></span>;
+            </p>
+            <p class="property">
+              <span class="color-2">year</span><span>:</span>
+              <span class="color-1">nov 2020</span>;
+            </p>
+            <span>}</span>
+          </code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tabs -->
+
+          <section class="my-cards" id="Projects1">
+            <h2 class="my-10 text-2xl sm:text-[2.5rem] font-semibold tracking-tight text-white">Hot Drops <span
+                class="text-[#FF33DE]">For You! 🔥</span></h2>
+            <div class="navtabs">
+              <div class="navtab active" data-target="Projects">Projects</div>
+              <div class="navtab" data-target="Design">UI Design</div>
+              <div class="navtab" data-target="Mockups">Mockups</div>
+            </div>
+
+            <div id="Projects" class="content active ">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-5">
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://krijuna.com/" class="title my-3">Krijuna</a>
+                    <a href="https://krijuna.com/"><i class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/KRIJUNA.png" alt="">
+                  </div>
+                </div>
+
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://www.astrosagga.com/" class="title my-3" target="_blank">Astro Sagga</a>
+                    <a href="https://www.astrosagga.com/" target="_blank"><i class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/astrosagga.png" alt="">
+                  </div>
+                </div>
+
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://numerology.synilogic.in/" class="title my-3" target="_blank">Divine Numerology</a>
+                    <a href="https://numerology.synilogic.in/" target="_blank"><i class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/Screenshot_22.png" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-5">
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://aiastro.synilogic.in/" class="title my-3" target="_blank">Ai Astrology</a>
+                    <a href="https://aiastro.synilogic.in/" target="_blank"><i class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/AI-Astrology.png" alt="">
+                  </div>
+                </div>
+
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://anandsecuritysolution.in/" class="title my-3" target="_blank">Anand Security</a>
+                    <a href="https://anandsecuritysolution.in/" target="_blank"><i class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/Anand-Security-Solution.png" alt="">
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div id="Design" class="content">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-5">
+                <div class="post-card">
+                  <span class="flex flex-row justify-between align-center">
+                    <a href="https://www.figma.com/proto/MU8rTejCchRf8RxB8MuwGs/faizan-ka-kaam?node-id=35-78&t=jyeIBcNq5e4vaNyn-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A1753"
+                      class="title my-3" target="_blank">Astrology</a>
+                    <a
+                      href="https://www.figma.com/proto/MU8rTejCchRf8RxB8MuwGs/faizan-ka-kaam?node-id=35-78&t=jyeIBcNq5e4vaNyn-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A1753" target="_blank"><i
+                        class="fa-solid fa-link mx-2 p-2 link"></i></a>
+                  </span>
+                  <div class="image-preview">
+                    <img src="assets/images/Group 38002.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Mockups" class="content">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div>
+                  <img src="assets/images/slider-img-1.png" alt="Image 2" class="w-full h-auto">
+                </div>
+                <div>
+                  <img src="assets/images/slider-img-2.png" alt="Image 1" class="w-full h-auto">
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+          <section>
+
+          </section>
+        </main>
+
+      </div>
+    </div>
+    <section>
+      <div class="contact-me " id="Contact">
+        <h2 class="my-10 text-2xl text-center sm:text-[2.5rem] font-semibold tracking-tight text-white">Stay in Touch
+          <span class="text-[#FF33DE]">Through </span>Social
+        </h2>
+        <div class="social-buttons">
+          <a href="https://github.com/faizan-sajid88" class="social-button github" target="_blank">
+            <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+              <path
+                d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://in.linkedin.com/in/faizan-sajid-23b52621a" class="social-button linkedin" target="_blank" >
+            <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Icons" stroke="none" stroke-width="1">
+                <g transform="translate(-702.000000, -265.000000)">
+                  <path
+                    d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                    id="LinkedIn">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="https://wa.me/9672932853" class="social-button whatsapp">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" xml:space="preserve" fill="#25D366" target="_blank">
+              <g id="XMLID_834_">
+                <path id="XMLID_835_" d="M150.068,0.005c-82.656,0-149.76,67.104-149.76,149.76c0,26.408,7.184,52.248,20.784,74.888L0.093,300.005
+                l77.512-20.376c21.512,12.304,45.976,18.928,72.272,18.928c82.656,0,149.76-67.104,149.76-149.76
+                C299.828,67.109,232.724,0.005,150.068,0.005z M150.068,270.304c-23.464,0-46.392-6.336-66.288-18.32l-4.744-2.848l-46.08,12.096
+                l12.32-44.8l-3.08-4.96c-12.592-20.272-19.312-43.648-19.312-67.712c0-72.368,58.88-131.248,131.248-131.248
+                c72.368,0,131.248,58.88,131.248,131.248C281.316,211.424,222.436,270.304,150.068,270.304z" />
+                <path id="XMLID_836_" d="M224.12,175.352c-3.36-1.68-19.856-9.824-22.936-10.96c-3.08-1.12-5.336-1.68-7.592,1.68
+                c-2.256,3.36-8.72,10.96-10.672,13.232c-1.952,2.256-3.92,2.528-7.28,0.84c-3.36-1.68-14.152-5.2-26.96-16.568
+                c-9.968-8.88-16.72-19.808-18.672-23.168c-1.952-3.36-0.208-5.184,1.456-6.864c1.496-1.488,3.36-3.92,5.04-5.872
+                c1.68-1.952,2.24-3.36,3.36-5.6c1.12-2.256,0.56-4.2-0.28-5.872c-0.832-1.68-7.592-18.288-10.48-25.312
+                c-2.752-6.592-5.544-5.696-7.592-5.776c-1.952-0.08-4.16-0.096-6.368-0.096c-2.208,0-5.68,0.8-8.656,3.6
+                c-2.976,2.784-11.36,11.088-11.36,27.056c0,15.968,11.616,31.392,13.248,33.568c1.68,2.176,22.848,35.024,55.384,49.504
+                C202.692,214.712,210.94,216.28,217.308,216c6.72-0.336,20.688-8.448,23.6-16.632c2.912-8.192,2.912-15.2,2.048-16.632
+                C227.308,179.44,227.48,177.032,224.12,175.352z" />
+              </g>
+            </svg>
+
+          </a>
+          <a href="https://www.instagram.com/sayyed_faizaan/?hl=en" class="social-button instagram" target="_blank">
+            <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1">
+                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                      id="instagram-[#167]">
+
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="flex justify-center align-center flex-wrap">
+<a href="tel:9672932853" class="contact-btn mx-2">
+<h1>Phone: 9672932853</h1>
+</a>
+<a href="mailto:fsajid68@gmail.com" class="contact-btn mx-2">
+<h1>Email: fsajid68@gmail.com</h1>
+</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#22252b]">
+      <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-12 lg:px-8">
+        <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+          <div class="pb-6">
+            <a href="" class="text-sm leading-6 text-gray-600 hover:text-gray-400">Home</a>
+          </div>
+          <div class="pb-6">
+            <a href="" class="text-sm leading-6 text-gray-600 hover:text-gray-400">Experience</a>
+          </div>
+          <div class="pb-6">
+            <a href="#Education" class="text-sm leading-6 text-gray-600 hover:text-gray-400">Education</a>
+          </div>
+          <div class="pb-6">
+            <a href="#Projects1" class="text-sm leading-6 text-gray-600 hover:text-gray-400">Projects</a>
+          </div>
+          <div class="pb-6">
+            <a href="#Contact" class="text-sm leading-6 text-gray-600 hover:text-gray-400">Contact</a>
+          </div>
+        </nav>
+
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2024 Faizan sajid, All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div x-data="{ openError: true }" aria-live="assertive" x-cloak x-show="openError"
+    class="pointer-events-none fixed bottom-0 right-0 border-red-500 flex items-end px-4 py-6 sm:p-6 max-w-[418px] w-full"
+    style="z-index: 1000;">
+    <div x-cloak x-show="openError" class="flex w-full flex-col items-center space-y-4 sm:items-end"
+        x-transition:enter="transform ease-out duration-300 transition"
+        x-transition:enter-start="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+        x-transition:enter-end="translate-y-0 opacity-100 sm:translate-x-0"
+        x-transition:leave="transition ease-in duration-100"
+        x-transition:leave-start="translate-y-0 opacity-100 sm:translate-x-0"
+        x-transition:leave-end="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2">
+        <div
+            class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-black bg-opacity-95 shadow-lg ring-1 ring-black ring-opacity-5">
+            <div class="p-4">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <!-- Optional icon or image can go here -->
+                    </div>
+                    <div class="ml-3 w-0 flex-1 pt-0.5">
+                        <p class="text-sm font-medium text-[#e730ca]">Why do programmers prefer dark mode?</p>
+                        <p class="mt-1 text-sm text-white">Because the light attracts bugs!</p>
+                    </div>
+                    <div class="ml-4 flex flex-shrink-0">
+                        <button type="button" x-on:click="openError = false"
+                            class="inline-flex rounded-md bg-[#e730ca] text-white hover:text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            <span class="sr-only">Close</span>
+                            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Assuming `openError` is true by default in the x-data attribute
+        // If you want to set it dynamically, you can update the value here
+    });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+  <script src="assets/js/anime.js"></script>
+</body>
+
+</html>
