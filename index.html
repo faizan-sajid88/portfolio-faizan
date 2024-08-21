@@ -694,9 +694,45 @@
         </div>
     </div>
 </div>
-
+<div id="loader">
+  <h1 class="text-center text-light">Loading...</h1>
+  <div class="container center">
+    <div class="rope center">
+      <div class="legs center">
+        <div class="boot-l"></div>
+        <div class="boot-r"></div>
+      </div>
+      <div class="costume center">
+        <div class="spider">
+          <div class="s1 center"></div>
+          <div class="s2 center"></div>
+          <div class="s3"></div>
+          <div class="s4"></div>
+        </div>
+        <div class="belt center"></div>
+        <div class="hand-r"></div>
+        <div class="hand-l"></div>
+        <div class="neck center"></div>
+        <div class="mask center">
+          <div class="eye-l"></div>
+          <div class="eye-r"></div>
+        </div>
+        <div class="cover center"></div>
+      </div>
+  </div>
+ 
+</div>
+</div>
 
 </div>
+<script>
+  // JavaScript to hide the loader after 5 seconds
+  window.addEventListener('load', function() {
+      setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+      }, 5000);
+  });
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
        
